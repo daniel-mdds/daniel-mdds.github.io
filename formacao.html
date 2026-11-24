@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel Medeiros · Formação acadêmica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<div id="app"></div>
+<script type="text/template" id="dm-tpl">
+
+<div class="dm-root {{langCls}}" id="topo" style="font-family: 'Manrope', system-ui, sans-serif; background: #FFFFFF; color: #11151C; {{shell}}">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.92); border-bottom: 1px solid #DDE2EA; backdrop-filter: blur(10px)">
+<div class="dm-hdr" style="max-width: 1440px; margin: 0 auto; padding: 14px clamp(16px, 4cqi, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px; min-height: 44px">
+<a href="{{links.home}}" style="text-decoration: none; display: flex; align-items: baseline; gap: 10px; font-weight: 800; font-size: 18px; letter-spacing: -0.01em">Daniel Medeiros<span class="dm-tag" style="font-family: 'IBM Plex Mono', monospace; font-weight: 400; font-size: 12px; color: #4A5363"><span class="dm-pt">UX · Product · Management</span><span class="dm-en">UX · Product · Management</span></span></a>
+<div class="dm-hright" style="display: flex; align-items: center; gap: 4px">
+<nav aria-label="{{tx.main}}" class="dm-navlinks" style="display: flex; gap: 4px; font-size: 14px; font-weight: 600">
+<a href="{{links.home}}" class="dm-navlink" style="color: #11151C"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2"></circle><circle cx="18" cy="5" r="2"></circle><path d="M8 19h8.5a3.5 3.5 0 0 0 0-7h-9a3.5 3.5 0 0 1 0-7H16"></path></svg><span class="dm-navtxt"><span class="dm-pt">Jornada</span><span class="dm-en">Journey</span></span></a>
+<a href="{{links.bio}}" class="dm-navlink" style="color: #11151C"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"></path></svg><span class="dm-navtxt"><span class="dm-pt">Biografia</span><span class="dm-en">Biography</span></span></a>
+<a href="{{links.exp}}" class="dm-navlink" style="color: #11151C"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M3 13h18"></path></svg><span class="dm-navtxt"><span class="dm-pt">Experiência profissional</span><span class="dm-en">Work experience</span></span></a>
+<a href="{{links.form}}" class="dm-navlink" aria-current="page" style="color: #2747C9; background: #EEF1F6"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"></path><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"></path></svg><span class="dm-navtxt"><span class="dm-pt">Formação acadêmica</span><span class="dm-en">Education</span></span></a>
+</nav>
+<div class="dm-lang" role="group" aria-label="{{tx.lang}}"><button type="button" data-lang="pt" aria-pressed="{{lp.pt}}" aria-label="Português" style="color: {{lp.ptColor}}; font-weight: {{lp.ptWeight}}">PT</button><span class="dm-langsep" aria-hidden="true" style="color: #C9D0DC">|</span><button type="button" data-lang="en" aria-pressed="{{lp.en}}" aria-label="English" style="color: {{lp.enColor}}; font-weight: {{lp.enWeight}}">EN</button></div>
+</div>
+</div>
+</header>
+<div class="dm-side" style="max-width: 1440px; margin: 0 auto; {{scroll}}">
+<aside aria-label="{{tx.contact}}" style="min-width: 0">
+<div class="dm-sidestick" style="padding: 48px 16px 32px clamp(10px, 3cqi, 48px); display: flex; flex-direction: column; gap: 20px; font-size: 15px">
+<p style="margin: 0; padding-top: 13px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1; letter-spacing: .12em; text-transform: uppercase; color: #4A5363"><span class="dm-pt">Contato</span><span class="dm-en">Contact</span></p>
+<span class="dm-ci" style="display: flex; flex-direction: column; gap: 2px"><span class="dm-ck" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363"><span class="dm-pt">E-mail</span><span class="dm-en">Email</span></span><a href="mailto:dan.sva@gmail.com" style="font-weight: 700; color: #2747C9; padding: 6px 0; overflow-wrap: anywhere">dan.sva@gmail.com</a></span>
+<span class="dm-ci" style="display: flex; flex-direction: column; gap: 2px"><span class="dm-ck" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363">LinkedIn</span><a href="https://www.linkedin.com/in/daniel-medeiros-dds" style="font-weight: 700; color: #2747C9; padding: 6px 0; overflow-wrap: anywhere">in/daniel-medeiros-dds</a></span>
+<span class="dm-ci" style="display: flex; flex-direction: column; gap: 2px"><span class="dm-ck" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363"><span class="dm-pt">Local</span><span class="dm-en">Location</span></span><span style="font-weight: 700; padding: 6px 0">São Paulo, SP</span></span>
+</div>
+</aside>
+<main class="dm-main" style="min-width: 0; padding: 48px clamp(16px, 5cqi, 80px) clamp(48px, 6cqi, 96px) clamp(12px, 3cqi, 40px)">
+<div style="max-width: 760px">
+<section id="formacao" aria-labelledby="t-form" style="display: flex; flex-direction: column; gap: 20px">
+<h1 id="t-form" style="margin: 0 0 12px; font-size: clamp(30px, 4.4cqi, 56px); line-height: 1.08; letter-spacing: -0.025em; font-weight: 800"><span class="dm-pt">Formação acadêmica</span><span class="dm-en">Education</span></h1>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+<li style="padding: 16px 0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363">2020–2021 · FIAP</span><span style="font-size: 17px; font-weight: 700"><span class="dm-pt">MBA em UX Design &amp; Strategy</span><span class="dm-en">MBA in UX Design &amp; Strategy</span></span></li>
+<li style="padding: 16px 0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363"><span class="dm-pt">2014–2016 · Universidade Federal Fluminense</span><span class="dm-en">2014–2016 · Fluminense Federal University</span></span><span style="font-size: 17px; font-weight: 700"><span class="dm-pt">Processos Gerenciais, ênfase em empreendedorismo</span><span class="dm-en">Management Processes, with an emphasis on entrepreneurship</span></span></li>
+<li style="padding: 16px 0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363">2013 · Instituto Infnet</span><span style="font-size: 17px; font-weight: 700"><span class="dm-pt">HTML5, CSS3 e Web Standards</span><span class="dm-en">HTML5, CSS3 and Web Standards</span></span></li>
+<li style="padding: 16px 0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363"><span class="dm-pt">2010–2012 · Escola de Cinema Darcy Ribeiro</span><span class="dm-en">2010–2012 · Darcy Ribeiro Film School</span></span><span style="font-size: 17px; font-weight: 700"><span class="dm-pt">Roteiro Cinematográfico</span><span class="dm-en">Screenwriting</span></span></li>
+<li style="padding: 16px 0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363">2007–2009 · Estácio</span><span style="font-size: 17px; font-weight: 700"><span class="dm-pt">Graduação em Desenho Industrial</span><span class="dm-en">Bachelor’s degree in Industrial Design</span></span></li>
+<li style="padding: 16px 0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363">2004–2006 · Estácio</span><span style="font-size: 17px; font-weight: 700"><span class="dm-pt">Técnico em Design Gráfico</span><span class="dm-en">Technical degree in Graphic Design</span></span></li>
+</ol>
+</section>
+</div>
+<div class="dm-cm" aria-label="{{tx.contact}}" style="display: none; margin-top: 40px; flex-direction: column; gap: 2px; font-size: 15px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1; letter-spacing: .12em; text-transform: uppercase; color: #4A5363"><span class="dm-pt">Contato</span><span class="dm-en">Contact</span></p>
+<span class="dm-ci" style="display: flex; flex-direction: column; gap: 2px"><span class="dm-ck" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363"><span class="dm-pt">E-mail</span><span class="dm-en">Email</span></span><a href="mailto:dan.sva@gmail.com" style="font-weight: 700; color: #2747C9; padding: 6px 0; overflow-wrap: anywhere">dan.sva@gmail.com</a></span>
+<span class="dm-ci" style="display: flex; flex-direction: column; gap: 2px"><span class="dm-ck" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363">LinkedIn</span><a href="https://www.linkedin.com/in/daniel-medeiros-dds" style="font-weight: 700; color: #2747C9; padding: 6px 0; overflow-wrap: anywhere">in/daniel-medeiros-dds</a></span>
+<span class="dm-ci" style="display: flex; flex-direction: column; gap: 2px"><span class="dm-ck" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A5363"><span class="dm-pt">Local</span><span class="dm-en">Location</span></span><span style="font-weight: 700; padding: 6px 0">São Paulo, SP</span></span>
+</div>
+<div style="margin-top: 48px; display: flex; flex-direction: column; gap: 28px">
+<footer class="dm-foot" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: #4A5363; border-top: 1px solid #DDE2EA; padding-top: 24px; font-family: 'Manrope', sans-serif">
+<span style="padding: 10px 0">Daniel Medeiros · São Paulo, SP<br><span style="font-size: 12px; color: #4A5363"><span class="dm-pt">Conteúdo produzido com auxílio de Inteligência Artificial.</span><span class="dm-en">Content created with the help of Artificial Intelligence.</span></span></span>
+<span style="display: flex; flex-wrap: wrap; gap: 4px 24px"><a href="mailto:dan.sva@gmail.com" style="font-weight: 700; color: #2747C9; text-decoration: none; padding: 10px 0">dan.sva@gmail.com</a><a href="https://www.linkedin.com/in/daniel-medeiros-dds" style="font-weight: 700; color: #2747C9; text-decoration: none; padding: 10px 0">LinkedIn</a></span>
+</footer>
+</div>
+</main>
+</div>
+<nav aria-label="{{tx.main}}" class="dm-bnav">
+<a href="{{links.home}}" class="dm-bnavlink" style="color: #4A5363; font-weight: 600"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2"></circle><circle cx="18" cy="5" r="2"></circle><path d="M8 19h8.5a3.5 3.5 0 0 0 0-7h-9a3.5 3.5 0 0 1 0-7H16"></path></svg><span><span class="dm-pt">Jornada</span><span class="dm-en">Journey</span></span></a>
+<a href="{{links.bio}}" class="dm-bnavlink" style="color: #4A5363; font-weight: 600"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"></path></svg><span><span class="dm-pt">Biografia</span><span class="dm-en">Biography</span></span></a>
+<a href="{{links.exp}}" class="dm-bnavlink" style="color: #4A5363; font-weight: 600"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M3 13h18"></path></svg><span><span class="dm-pt">Experiência</span><span class="dm-en">Experience</span></span></a>
+<a href="{{links.form}}" class="dm-bnavlink" aria-current="page" style="color: #2747C9; font-weight: 800"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"></path><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"></path></svg><span><span class="dm-pt">Formação</span><span class="dm-en">Education</span></span></a>
+</nav>
+</div>
+</script>
+<script src="js/runtime.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>
