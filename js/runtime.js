@@ -20,6 +20,7 @@ function morph(a,b){
   for(var i=0;i<a.childNodes.length;i++)morph(a.childNodes[i],b.childNodes[i]);
 }
 var comp=new Component(), first=true, pending=false;
+if(typeof dmGetLang==='function'){comp.state.lang=dmGetLang();if(typeof dmSetDocLang==='function')dmSetDocLang(comp.state.lang)}
 function render(){
   pending=false;
   var html=build(comp.renderVals());
